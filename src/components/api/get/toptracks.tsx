@@ -43,7 +43,7 @@ const TopTracks: React.FC = () => {
                     {item.artists.map((artist: {
                         id: string | null | undefined; name: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; 
 }) => (
-                        <div key={artist.id}>{artist.name}</div>
+                        <li key={artist.id}>{artist.name}</li>
                     ))}
                 </ul>
             </li>
