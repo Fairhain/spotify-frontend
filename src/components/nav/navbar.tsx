@@ -2,7 +2,7 @@ import React from 'react';
 import './navbar.css'
 
 const CLIENT_ID = 'cc0d6b182b0c47828f0fae661633ba7d';
-const REDIRECT_URI = 'http://localhost:5173/callback'; // Replace with your redirect URI
+const REDIRECT_URI = 'hhttps://spotify-frontend-fairhains-projects.vercel.app/callback'; // Replace with your redirect URI
 const AUTH_ENDPOINT = 'https://accounts.spotify.com/authorize';
 const RESPONSE_TYPE = 'code';
 const SCOPES = 'streaming user-read-private user-read-email playlist-read-private user-top-read';
@@ -22,7 +22,7 @@ const NavBar: React.FC = () => {
       };
 
     const changePage = (path: string) => {
-        const page = `http://localhost:5173${path}`
+        const page = `https://spotify-frontend-fairhains-projects.vercel.app${path}`
         window.location.href = page;
     };
     
