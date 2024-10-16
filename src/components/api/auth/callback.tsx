@@ -20,7 +20,7 @@ const Callback: React.FC = () => {
         
         if (response.ok) {
           const tokenData = await response.json();
-          const { access_token, refresh_token, expires_in } = tokenData;
+          const { access_token, refresh_token } = tokenData;
   
           // Store tokens in localStorage
           localStorage.setItem('access_token', access_token);

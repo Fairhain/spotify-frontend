@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './play.css'
 
 const track = {
@@ -19,11 +19,10 @@ function WebPlayback() {
     const [is_active, setActive] = useState(false);
     const [player, setPlayer] = useState<Spotify.Player | undefined>(undefined);
     const [current_track, setTrack] = useState(track);
-    const accessToken = localStorage.getItem('access_token');
 
     useEffect(() => {
         window.onSpotifyWebPlaybackSDKReady = () => {
-            const token = accessToken;
+            const token = localStorage.getItem('access_token') || '';
             const player = new window.Spotify.Player({
                 name: 'Web Playback SDK',
                 getOAuthToken: (cb) => { cb(token); },
