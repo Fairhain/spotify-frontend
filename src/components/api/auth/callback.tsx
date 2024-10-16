@@ -29,7 +29,7 @@ const Callback: React.FC = () => {
           // Log tokens only after storing them
           console.log('Access Token:', access_token);
           console.log('Refresh Token:', refresh_token);
-          window.location.href = 'https://spotify-frontend-fairhains-projects.vercel.app/';
+          window.location.href = 'https://spotify-frontend-omega.vercel.app/';
 
         } else {
           console.error('Failed to exchange token:', await response.text());
