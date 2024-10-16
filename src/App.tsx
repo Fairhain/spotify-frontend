@@ -13,6 +13,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<div>
           <NavBar/>
+          <TopTracks/>
         </div>} />
         <Route path="/callback" element={<div>
           <NavBar/>

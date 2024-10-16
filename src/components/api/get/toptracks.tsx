@@ -34,7 +34,7 @@ const TopTracks: React.FC = () => {
 
   return (
     <div>
-      <h1>Top Artists</h1>
+      <h1>Top Tracks</h1>
       {tracks.length > 0 ? (
         <ol>
           {tracks.map((item) => (
