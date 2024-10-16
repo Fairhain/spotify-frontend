@@ -22,9 +22,9 @@ const NavBar: React.FC = () => {
       };
 
     const changePage = (path: string) => {
-        const page = `https://spotify-frontend-fairhains-projects.vercel.app${path}`
+        const page = `https://spotify-frontend-fairhains-projects.vercel.app/${path}`
         window.location.href = page;
-    };
+    };  
     
     return (
         <div className='nav-bar'>

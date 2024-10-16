@@ -16,7 +16,7 @@ const Callback: React.FC = () => {
   
     const getAccessToken = async (code: string) => {
       try {
-        const response = await fetch(`http://localhost:3000/getAccessToken?code=${code}`);
+        const response = await fetch(`https://backend-rqvr.onrender.com/getAccessToken?code=${code}`);
         
         if (response.ok) {
           const tokenData = await response.json();
